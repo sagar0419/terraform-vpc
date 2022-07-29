@@ -109,31 +109,6 @@ resource "aws_route_table_association" "private-2" {
 }
 
 ##NACL
-/*
-resource "aws_default_network_acl" "sagar" {
-  default_network_acl_id = aws_vpc.sagar-vpc.id
-  ingress {
-    protocol   = -1
-    rule_no    = 100
-    action     = "allow"
-    cidr_block = "0.0.0.0/0"
-    from_port  = 0
-    to_port    = 0
-  }
-
-  egress {
-    protocol   = -1
-    rule_no    = 100
-    action     = "allow"
-    cidr_block = "0.0.0.0/0"
-    from_port  = 0
-    to_port    = 0
-  }
-  tags = {
-    Name = "sagar_nacl"
-  }
-}  
-*/  
 
 /*
 resource "aws_network_acl" "sagar" {
